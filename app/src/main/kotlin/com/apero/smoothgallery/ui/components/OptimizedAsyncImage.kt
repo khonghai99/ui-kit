@@ -1,11 +1,14 @@
 package com.apero.smoothgallery.ui.components
 
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.FilterQuality
 import androidx.compose.ui.layout.ContentScale
 import coil3.compose.AsyncImage
 import coil3.compose.LocalPlatformContext
+import coil3.compose.rememberAsyncImagePainter
 import coil3.request.ImageRequest
 import coil3.request.crossfade
 import coil3.size.Scale
@@ -31,5 +34,6 @@ fun OptimizedAsyncImage(
         modifier = modifier,
         contentScale = contentScale,
         filterQuality = filterQuality,
+        error = rememberAsyncImagePainter(model = null), // blank on error instead of crash
     )
 }

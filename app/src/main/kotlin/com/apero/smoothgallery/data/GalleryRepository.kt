@@ -18,7 +18,11 @@ class GalleryRepository @Inject constructor() {
 
     fun getImagesPager(): Flow<PagingData<GalleryImage>> {
         return Pager(
-            config = PagingConfig(pageSize = 20, prefetchDistance = 5),
+            config = PagingConfig(
+                pageSize = 20,
+                prefetchDistance = 5,
+                initialLoadSize = 20, // Must match pageSize — MockData IDs derive from page*loadSize
+            ),
         ) {
             GalleryPagingSource()
         }.flow
