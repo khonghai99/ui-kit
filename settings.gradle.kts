@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SmoothGallery"
+rootProject.name = "UiKit"
 include(":app")

@@ -1,11 +1,11 @@
-package com.apero.smoothgallery
+package com.apero.uikit
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.apero.smoothgallery.ui.screen.GalleryScreen
-import com.apero.smoothgallery.ui.theme.SmoothGalleryTheme
+import com.apero.uikit.ui.screen.GalleryScreen
+import com.apero.uikit.ui.theme.UiKitTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContent {
-            SmoothGalleryTheme {
+            UiKitTheme {
                 GalleryScreen()
             }
         }

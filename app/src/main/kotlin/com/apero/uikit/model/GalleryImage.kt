@@ -1,4 +1,4 @@
-package com.apero.smoothgallery.model
+package com.apero.uikit.model
 
 import androidx.compose.runtime.Immutable
 

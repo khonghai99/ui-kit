@@ -1,10 +1,10 @@
-package com.apero.smoothgallery.ui.screen
+package com.apero.uikit.ui.screen
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
-import com.apero.smoothgallery.data.GalleryRepository
-import com.apero.smoothgallery.model.GalleryImage
+import com.apero.uikit.data.GalleryRepository
+import com.apero.uikit.model.GalleryImage
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

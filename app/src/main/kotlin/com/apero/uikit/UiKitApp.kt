@@ -1,4 +1,4 @@
-package com.apero.smoothgallery
+package com.apero.uikit
 
 import android.app.Application
 import coil3.ImageLoader
@@ -12,7 +12,7 @@ import dagger.hilt.android.HiltAndroidApp
 import okio.Path.Companion.toOkioPath
 
 @HiltAndroidApp
-class SmoothGalleryApp : Application(), SingletonImageLoader.Factory {
+class UiKitApp : Application(), SingletonImageLoader.Factory {
 
     override fun newImageLoader(context: PlatformContext): ImageLoader {
         return ImageLoader.Builder(context)

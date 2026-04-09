@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.apero.smoothgallery"
+    namespace = "com.apero.uikit"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.apero.smoothgallery"
+        applicationId = "com.apero.uikit"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

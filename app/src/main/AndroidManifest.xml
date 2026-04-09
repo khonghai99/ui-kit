@@ -4,17 +4,17 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".SmoothGalleryApp"
+        android:name=".UiKitApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SmoothGallery">
+        android:theme="@style/Theme.UiKit">
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.SmoothGallery">
+            android:theme="@style/Theme.UiKit">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

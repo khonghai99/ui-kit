@@ -1,8 +1,8 @@
-package com.apero.smoothgallery.data
+package com.apero.uikit.data
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.apero.smoothgallery.model.GalleryImage
+import com.apero.uikit.model.GalleryImage
 import kotlinx.coroutines.delay
 
 class GalleryPagingSource : PagingSource<Int, GalleryImage>() {

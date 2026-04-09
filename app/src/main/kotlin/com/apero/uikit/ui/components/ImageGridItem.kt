@@ -1,4 +1,4 @@
-package com.apero.smoothgallery.ui.components
+package com.apero.uikit.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.apero.smoothgallery.model.GalleryImage
+import com.apero.uikit.model.GalleryImage
 
 /** Single grid cell — uses thumbnailUrl for smaller decode. */
 @Composable

@@ -1,6 +1,6 @@
-package com.apero.smoothgallery.data
+package com.apero.uikit.data
 
-import com.apero.smoothgallery.model.GalleryImage
+import com.apero.uikit.model.GalleryImage
 
 /** Picsum-based mock data — no API key required. */
 object MockData {

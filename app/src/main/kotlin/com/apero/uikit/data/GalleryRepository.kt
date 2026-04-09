@@ -1,9 +1,9 @@
-package com.apero.smoothgallery.data
+package com.apero.uikit.data
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import com.apero.smoothgallery.model.GalleryImage
+import com.apero.uikit.model.GalleryImage
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 import javax.inject.Inject

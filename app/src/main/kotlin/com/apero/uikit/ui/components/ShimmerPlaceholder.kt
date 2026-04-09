@@ -1,4 +1,4 @@
-package com.apero.smoothgallery.ui.components
+package com.apero.uikit.ui.components
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
