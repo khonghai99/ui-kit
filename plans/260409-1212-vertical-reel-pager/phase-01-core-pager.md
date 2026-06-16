@@ -7,7 +7,7 @@
 
 ## Overview
 - **Priority**: P1 (blocks all other phases)
-- **Status**: Pending
+- **Status**: Complete
 - **Effort**: 1.5h
 
 Create the main `VerticalReelPager` composable and `ReelPageLifecycleEffect` side-effect. These are the foundation all other reel components build on.
@@ -144,12 +144,12 @@ Uses `LaunchedEffect(pagerState.settledPage)` and `LaunchedEffect(pagerState.cur
 
 ## Todo List
 
-- [ ] Create `reel/` directory
-- [ ] Implement `ReelPageLifecycleEffect.kt` (~60 lines)
-- [ ] Implement `VerticalReelPager.kt` List<T> overload (~80 lines)
-- [ ] Implement `VerticalReelPager.kt` LazyPagingItems<T> overload (~90 lines)
-- [ ] Verify both files < 200 lines
-- [ ] Compile check passes
+- [x] Create `reel/` directory
+- [x] Implement `ReelPageLifecycleEffect.kt` (~60 lines)
+- [x] Implement `VerticalReelPager.kt` List<T> overload (~80 lines)
+- [x] Implement `VerticalReelPager.kt` LazyPagingItems<T> overload (~90 lines)
+- [x] Verify both files < 200 lines
+- [x] Compile check passes
 
 ## Success Criteria
 

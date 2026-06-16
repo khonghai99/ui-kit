@@ -8,7 +8,7 @@
 
 ## Overview
 - **Priority**: P1
-- **Status**: Pending
+- **Status**: Complete
 - **Effort**: 1h
 - **Blocked by**: Phase 1
 - **Parallel with**: Phase 2
@@ -137,10 +137,10 @@ Deliberately minimal. Flow's `prepare(index, id, url, audioUrl, shouldPlay)` is 
 
 ## Todo List
 
-- [ ] Implement `ReelPlayerPool.kt` interface (~40 lines)
-- [ ] Implement `ReelProgressIndicator.kt` with non-scrub and scrub modes (~110 lines)
-- [ ] Verify both files < 200 lines
-- [ ] Compile check passes
+- [x] Implement `ReelPlayerPool.kt` interface (~40 lines)
+- [x] Implement `ReelProgressIndicator.kt` with non-scrub and scrub modes (~110 lines)
+- [x] Verify both files < 200 lines
+- [x] Compile check passes
 
 ## Success Criteria
 

@@ -1,12 +1,13 @@
 ---
 title: "Vertical Reel Pager Component"
 description: "Port Reel/Shorts vertical pager pattern from Flow into ui-kit as generic composable components"
-status: pending
+status: complete
 priority: P1
 effort: 5h
 branch: feat/hero-carousel-pager
 tags: [compose, pager, reel, component-library]
 created: 2026-04-09
+completed: 2026-04-09
 ---
 
 # Vertical Reel Pager — Implementation Plan
@@ -56,11 +57,11 @@ Consumer provides:
 
 | # | Phase | Files | Effort | Status |
 |---|-------|-------|--------|--------|
-| 1 | [Core Pager + Lifecycle](./phase-01-core-pager.md) | VerticalReelPager.kt, ReelPageLifecycleEffect.kt | 1.5h | Pending |
-| 2 | [Page Container + Gestures](./phase-02-container-gestures.md) | ReelPageContainer.kt, ReelGestureDetector.kt | 1h | Pending |
-| 3 | [Progress + Player Pool Interface](./phase-03-progress-player-pool.md) | ReelProgressIndicator.kt, ReelPlayerPool.kt | 1h | Pending |
-| 4 | [Demo Integration](./phase-04-demo-integration.md) | GalleryScreen.kt, GalleryViewModel.kt, MockData.kt, model | 1h | Pending |
-| 5 | [Verification + Polish](./phase-05-verification.md) | All files | 0.5h | Pending |
+| 1 | [Core Pager + Lifecycle](./phase-01-core-pager.md) | VerticalReelPager.kt, ReelPageLifecycleEffect.kt | 1.5h | Done |
+| 2 | [Page Container + Gestures](./phase-02-container-gestures.md) | ReelPageContainer.kt, ReelGestureDetector.kt | 1h | Done |
+| 3 | [Progress + Player Pool Interface](./phase-03-progress-player-pool.md) | ReelProgressIndicator.kt, ReelPlayerPool.kt | 1h | Done |
+| 4 | [Demo Integration](./phase-04-demo-integration.md) | GalleryScreen.kt, GalleryViewModel.kt, MockData.kt, model | 1h | Done |
+| 5 | [Verification + Polish](./phase-05-verification.md) | All files | 0.5h | Done |
 
 ## Dependency Graph
 
@@ -103,10 +104,10 @@ Each phase adds NEW files only (no existing file modifications until Phase 4). P
 
 ## Success Criteria
 
-- [ ] `VerticalReelPager` renders with List<T> and scrolls vertically page-by-page
-- [ ] LazyPagingItems overload loads more items near end of list
-- [ ] Gesture callbacks (tap, doubleTap, longPress) fire correctly
-- [ ] Progress indicator animates with provided progress value
-- [ ] Demo screen shows vertical reel section with images
-- [ ] All files <200 lines
-- [ ] `./gradlew :app:compileDebugKotlin` passes
+- [x] `VerticalReelPager` renders with List<T> and scrolls vertically page-by-page
+- [x] LazyPagingItems overload loads more items near end of list
+- [x] Gesture callbacks (tap, doubleTap, longPress) fire correctly
+- [x] Progress indicator animates with provided progress value
+- [x] Demo screen shows vertical reel section with images
+- [x] All files <200 lines
+- [x] `./gradlew :app:compileDebugKotlin` passes

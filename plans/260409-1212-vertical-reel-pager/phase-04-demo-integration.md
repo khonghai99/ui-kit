@@ -9,7 +9,7 @@
 
 ## Overview
 - **Priority**: P1
-- **Status**: Pending
+- **Status**: Complete
 - **Effort**: 1h
 - **Blocked by**: Phases 1, 2, 3
 
@@ -147,14 +147,14 @@ Check current `MainActivity.kt` to confirm:
 
 ## Todo List
 
-- [ ] Add `reelImages` to `MockData.kt`
-- [ ] Add `getReelImages()` to `GalleryRepository.kt`
-- [ ] Add `reelImages` flow to `GalleryViewModel.kt`
-- [ ] Create `ReelDemoScreen.kt` with all reel components
-- [ ] Add navigation button to `GalleryScreen.kt`
-- [ ] Update `MainActivity.kt` with screen toggle
-- [ ] Compile check passes
-- [ ] Manual verification: reel scrolls vertically, gestures fire, progress animates
+- [x] Add `reelImages` to `MockData.kt`
+- [x] Add `getReelImages()` to `GalleryRepository.kt`
+- [x] Add `reelImages` flow to `GalleryViewModel.kt`
+- [x] Create `ReelDemoScreen.kt` with all reel components
+- [x] Add navigation button to `GalleryScreen.kt`
+- [x] Update `MainActivity.kt` with screen toggle
+- [x] Compile check passes
+- [x] Manual verification: reel scrolls vertically, gestures fire, progress animates
 
 ## Success Criteria
 

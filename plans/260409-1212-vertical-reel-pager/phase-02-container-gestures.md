@@ -7,7 +7,7 @@
 
 ## Overview
 - **Priority**: P1
-- **Status**: Pending
+- **Status**: Complete
 - **Effort**: 1h
 - **Blocked by**: Phase 1
 
@@ -125,10 +125,10 @@ Implementation:
 
 ## Todo List
 
-- [ ] Implement `ReelPageContainer.kt` with gradient overlays and media/overlay slots
-- [ ] Implement `ReelGestureDetector.kt` with configurable gesture callbacks
-- [ ] Verify both files < 200 lines
-- [ ] Compile check passes
+- [x] Implement `ReelPageContainer.kt` with gradient overlays and media/overlay slots
+- [x] Implement `ReelGestureDetector.kt` with configurable gesture callbacks
+- [x] Verify both files < 200 lines
+- [x] Compile check passes
 
 ## Success Criteria
 
