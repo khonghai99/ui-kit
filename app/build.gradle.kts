@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.apero.uikit"
+    namespace = "com.apero.composa"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.apero.uikit"
+        applicationId = "com.apero.composa"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

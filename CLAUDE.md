@@ -1,7 +1,7 @@
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **ui-kit** (327 symbols, 520 relationships, 10 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **Composa** (327 symbols, 520 relationships, 10 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
@@ -17,7 +17,7 @@ This project is indexed by GitNexus as **ui-kit** (327 symbols, 520 relationship
 
 1. `gitnexus_query({query: "<error or symptom>"})` — find execution flows related to the issue
 2. `gitnexus_context({name: "<suspect function>"})` — see all callers, callees, and process participation
-3. `READ gitnexus://repo/ui-kit/process/{processName}` — trace the full execution flow step by step
+3. `READ gitnexus://repo/Composa/process/{processName}` — trace the full execution flow step by step
 4. For regressions: `gitnexus_detect_changes({scope: "compare", base_ref: "main"})` — see what your branch changed
 
 ## When Refactoring
@@ -56,10 +56,10 @@ This project is indexed by GitNexus as **ui-kit** (327 symbols, 520 relationship
 
 | Resource | Use for |
 |----------|---------|
-| `gitnexus://repo/ui-kit/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/ui-kit/clusters` | All functional areas |
-| `gitnexus://repo/ui-kit/processes` | All execution flows |
-| `gitnexus://repo/ui-kit/process/{name}` | Step-by-step execution trace |
+| `gitnexus://repo/Composa/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/Composa/clusters` | All functional areas |
+| `gitnexus://repo/Composa/processes` | All execution flows |
+| `gitnexus://repo/Composa/process/{name}` | Step-by-step execution trace |
 
 ## Self-Check Before Finishing
 

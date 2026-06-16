@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UiKit"
+rootProject.name = "Composa"
 include(":app")
