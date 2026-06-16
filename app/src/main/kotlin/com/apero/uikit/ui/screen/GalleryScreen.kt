@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -25,6 +24,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.paging.compose.collectAsLazyPagingItems
 import androidx.paging.compose.itemContentType
 import androidx.paging.compose.itemKey
+import androidx.compose.material3.Button
 import com.apero.uikit.ui.components.CarouselBannerItem
 import com.apero.uikit.ui.components.ImageGridItem
 import com.apero.uikit.ui.components.carousel.HeroCenterCarousel
@@ -33,6 +33,7 @@ import com.apero.uikit.ui.components.carousel.HeroCenterCarousel
 @Composable
 fun GalleryScreen(
     viewModel: GalleryViewModel = hiltViewModel(),
+    onNavigateToReel: () -> Unit = {},
     onNavigateToBottomNav: () -> Unit = {},
 ) {
     val trending by viewModel.trendingImages.collectAsStateWithLifecycle()
@@ -65,6 +66,12 @@ fun GalleryScreen(
                     }
 
                     Spacer(Modifier.height(16.dp))
+
+                    Button(onClick = onNavigateToReel) {
+                        Text("Open Reel Demo")
+                    }
+
+                    Spacer(Modifier.height(12.dp))
 
                     Button(onClick = onNavigateToBottomNav) {
                         Text("Open Bottom Nav Demo")
