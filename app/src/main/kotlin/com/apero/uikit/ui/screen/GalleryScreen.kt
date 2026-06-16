@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -30,7 +31,10 @@ import com.apero.uikit.ui.components.carousel.HeroCenterCarousel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun GalleryScreen(viewModel: GalleryViewModel = hiltViewModel()) {
+fun GalleryScreen(
+    viewModel: GalleryViewModel = hiltViewModel(),
+    onNavigateToBottomNav: () -> Unit = {},
+) {
     val trending by viewModel.trendingImages.collectAsStateWithLifecycle()
     val gridItems = viewModel.gridImages.collectAsLazyPagingItems()
 
@@ -58,6 +62,12 @@ fun GalleryScreen(viewModel: GalleryViewModel = hiltViewModel()) {
                     )
                     HeroCenterCarousel(items = trending, infiniteScroll = true) { image ->
                         CarouselBannerItem(image = image)
+                    }
+
+                    Spacer(Modifier.height(16.dp))
+
+                    Button(onClick = onNavigateToBottomNav) {
+                        Text("Open Bottom Nav Demo")
                     }
 
                     Spacer(Modifier.height(24.dp))
